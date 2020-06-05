@@ -15,9 +15,9 @@ namespace nguyenhuutri_lab34.Models
         [Required]
         [StringLength(255)]
         public string Place { get; set; }
-        public string DateTime { get; set; }
-        public string Category { get; set; }
+        public DateTime DateTime { get; set; }
+        public Category Category { get; set; }
         [Required]
-        public string CategoryId { get; set; }
+        public byte CategoryId { get; set; }
     }
 }
