@@ -20,6 +20,7 @@ namespace nguyenhuutri_lab34.Migrations
                 "dbo.Courses",
                 c => new
                     {
+
                         Id = c.Int(nullable: false, identity: true),
                         LecturerId = c.String(nullable: false, maxLength: 128),
                         Place = c.String(nullable: false, maxLength: 255),
