@@ -22,7 +22,7 @@ namespace nguyenhuutri_lab34.Controllers
         public IHttpActionResult Follow(FollowingDto followingDto)
         {
             var userId = User.Identity.GetUserId();
-            if (_dbContext.Followings.Any(a => a.FollowerId == userId && a.FolloweeId == followingDto.FolloweeId))
+            if (_dbContext.Followings.Any(f => f.FollowerId == userId && f.FolloweeId == followingDto.FolloweeId))
                 return BadRequest("Following already exists !");
             var following = new Following
             {
