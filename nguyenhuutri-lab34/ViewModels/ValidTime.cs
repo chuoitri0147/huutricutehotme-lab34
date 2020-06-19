@@ -17,7 +17,7 @@ namespace nguyenhuutri_lab34.ViewModels
                 CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
                 out dateTime);
-            return base.IsValid(value);
+            return isValid;
         }
     }
 }
